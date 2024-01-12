@@ -1,0 +1,387 @@
+//palette1: #264653;
+//#2a9d8f;
+//#e9c46a;
+//#f4a261;
+//#e76f51;  
+// de reparat - mobile menu - sa inchia meniul la click pe link
+// hover effect on hover - navbar + project img
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-size:18px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+
+.container{
+    max-width:600px;
+    margin:0 auto 0 auto;
+}
+header{
+    position:fixed;
+    top:0;
+    width:100%;   
+    background-color:white;
+    z-index:3;
+    padding: 1rem;
+    .container{
+        margin: 0 auto 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        .logo{
+            font-size: 1.7rem;
+        }
+        .navbar{
+            img{
+                width:30px;
+                cursor:pointer;
+            }
+            nav{
+                display:none;
+            }
+            .display-nav{
+                display:block;
+                position:absolute; 
+                top:0;
+                right:0;
+                height:100vh;
+                width:100vw;
+                background-color: #264653;
+                color:darkgray;
+                //opacity:0.95;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+                span{
+                    position:absolute;
+                    top:20px;
+                    right:19px;
+                    cursor: pointer;
+                }
+                ul{
+                    li{
+                        font-size:1.4rem;
+                        margin-bottom: 1rem;
+                        text-align:center;
+                        a{
+                            color:darkgray;
+                        }
+                        a:hover{
+                            color: #2a9d8f;
+                        }
+                        button{
+                            background-color: #f4a261;
+                            border:none;
+                            outline: none;
+                            color: #264653;
+                            border-radius: 5px;
+                            padding:7px 10px 7px 10px;
+                            font-size:1.2rem;
+                            font-weight:600;
+                            margin-top:1rem;
+                            &:hover{
+                                background-color: #e76f51;
+                            }
+                        }
+                    }
+                }
+
+            }
+            
+        }
+    }
+    
+}
+
+.intro{
+    background: rgb(42,157,143);
+    background: linear-gradient(47deg, rgba(42,157,143,1) 0%, rgba(233,196,106,1) 100%);
+//     background: rgb(42,157,143);
+//     background: linear-gradient(126deg, rgba(42,157,143,1) 0%, rgba(92,167,133,1) 26%, rgba(197,189,113,1) 81%, rgba(233,196,106,1) 100%);
+    height:100vh;
+    padding-left:1rem;
+   padding-bottom:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    
+    h1{
+        font-size:3rem;
+        margin-bottom:1rem;
+    }
+}
+
+.projects{
+    background-color: #2a9d8f;
+    padding:2rem 1rem;
+    .container{
+        h2{
+            margin-bottom:1rem;
+        }
+        .projects-container{
+            .project-container{
+                .text{
+                    .project-title{
+                        margin-bottom:0.3rem;
+                    }
+                    .description{
+                        line-height: 1.4rem;
+                        margin-bottom:1rem;
+                        background-color:rgb(71, 71, 71);
+                        padding:0.3rem 0.8rem;
+                        border-radius: 5px;
+                        box-shadow:1px 1px 5px rgb(42, 42, 42);
+                    }
+                    
+                    .technologies{
+                        display:flex;
+                        flex-direction: row;
+                        flex-wrap:wrap;
+                        gap:1%;
+                        justify-content:center;
+                        
+                        span{
+                            background-color: #e9c46a; 
+                            border-radius:5px;
+                            padding:0.5rem;
+                            font-size: 14px;
+                            margin-bottom: 5px;
+                            display:flex;
+                            img{
+                                width:15px;
+                                padding-right:2px;
+                            }
+                        }
+                    }
+                }
+                .photo{
+                    position:relative;
+                    width:300px;
+                    margin:1rem auto 1.5rem auto;
+                    img{
+                        width:300px;
+                       
+                    }
+                    .project-links{
+                        display:none;
+                    }
+                    &:hover{
+                       .project-links{
+                            display:block;
+                            position:absolute;
+                            top:0;
+                            width:100%;
+                            height:98%;
+                            background-color: rgba(255,0,0,0.3);
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            a.github{
+                                margin-right:10px;
+                            }
+                            a.external-link {
+                                margin-left:10px;
+                            }
+                            a svg{
+                                width:30px;
+                            }
+                            a:hover {
+                                svg{color:red}
+                            }
+                       } 
+                    }
+                }
+            }
+        }
+    }
+    
+} 
+.about{
+    background-color: #238478;
+    padding:1.5rem 1rem;
+    // h2{
+    //     margin-bottom:0.4rem;
+    // }
+    p{
+        margin-top:0.4rem;
+        line-height: 1.4rem;
+    }
+}
+.contact{
+    background-color: #264653;
+    text-align:center;
+    padding: 2rem 1rem;
+    .container{
+        max-width:360px;
+        margin:0 auto 0 auto;
+        h2{
+            margin-bottom:1rem;
+        }
+        em{
+            font-style: normal;
+        }
+        p{
+            margin-bottom: 2rem;
+        }
+        ul{
+            display:flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+            li{
+                
+                a:hover{
+                    color:#2a9d8f;
+                }
+                svg{
+                    width:30px;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #264653;
+    text-align:center;
+    padding-bottom:1rem;
+}
+
+@media (min-width:760px){
+
+    .container{
+        max-width:unset;
+        //de revenit cand stabilim max-width
+    }
+    header{
+        .container{
+            .navbar{
+                width:50%;
+                #open-menu{
+                    display:none;
+                }
+                nav{
+                    display:flex;
+                    
+                    #close-menu{
+                        display:none;
+                    }
+                    ul{
+                        width:100%;
+                        display:flex;
+                        flex-direction:row;
+                        justify-content:end;
+                        align-items: center;
+                        li{
+                            a{
+                                padding:0.4rem 1rem;
+                            }
+                            a:hover{
+                                background-color: lightgray;
+                                border-radius:5px;
+                            }
+                            &:last-child{
+                                width:130px;
+                                text-align: right;
+                            }
+                            button{
+                                background-color:#e9c46a;
+                                outline:none;
+                                border:none;
+                                border-radius:8px;
+                                padding: 0.5rem 1rem;
+                                font-size:1rem;
+                                font-weight: 600;
+                                cursor: pointer;
+                                &:hover{
+                                    background-color: #e76f51;
+                                }
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+    }
+    .projects{
+        .container{
+            .projects-container{
+                .project-container{
+                   
+                    display:grid;
+                    grid-template-columns: repeat(10, 1fr);
+                    .text{
+                        grid-column: 1/6;
+                        grid-row:1/1;
+                        z-index:2;
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .project-title{
+                            width:80%;
+                            text-align:center; 
+                            font-size:1.5rem; 
+                            margin-bottom:0.6rem;
+                        }
+                        .technologies{
+                            width:80%;
+                        }
+                    }
+                    .photo{
+                        width:100%;
+                        grid-column:5/11;
+                        grid-row:1/1;
+                        img{
+                            width:100%;
+                        }
+                    }
+                }
+                .alternate{
+                    .text{
+                        .project-title{
+                            width: 100%;
+                            padding-left:20%;
+                        }
+                        .technologies{
+                            width:100%;
+                            padding-left:20%;
+                        }
+                        grid-column:6/11;
+                    }
+                    .photo{
+                        grid-column:1/7;
+                    
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    @media (min-width:1024px){
+        .projects{
+            .container{
+                max-width:1200px;
+                .projects-container{
+                    .project-container{
+                        .photo{
+                            max-width:600px;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+        
+}
