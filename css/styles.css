@@ -55,8 +55,8 @@ header .container .navbar .display-nav {
   right: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #264653;
-  color: darkgray;
+  background-color: #4fa1a3;
+  color: rgb(26, 26, 26);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,10 +74,10 @@ header .container .navbar .display-nav ul li {
   text-align: center;
 }
 header .container .navbar .display-nav ul li a {
-  color: darkgray;
+  color: rgb(26, 26, 26);
 }
 header .container .navbar .display-nav ul li a:hover {
-  color: #2a9d8f;
+  color: #ece7d5;
 }
 header .container .navbar .display-nav ul li button {
   background-color: #f4a261;
@@ -91,12 +91,12 @@ header .container .navbar .display-nav ul li button {
   margin-top: 1rem;
 }
 header .container .navbar .display-nav ul li button:hover {
-  background-color: #e76f51;
+  background-color: #ece7d5;
 }
 
 .intro {
   background: rgb(42, 157, 143);
-  background: linear-gradient(47deg, rgb(42, 157, 143) 0%, rgb(233, 196, 106) 100%);
+  background: linear-gradient(0deg, rgb(42, 157, 143) 0%, rgb(255, 255, 255) 67%, rgb(255, 255, 255) 100%);
   height: 100vh;
   padding-left: 1rem;
   padding-bottom: 1rem;
@@ -111,13 +111,16 @@ header .container .navbar .display-nav ul li button:hover {
 
 .projects {
   background-color: #2a9d8f;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem 2rem 1rem;
 }
 .projects .container h2 {
+  margin-bottom: 2rem;
+}
+.projects .container .projects-container .project-container {
   margin-bottom: 1rem;
 }
 .projects .container .projects-container .project-container .text .project-title {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 .projects .container .projects-container .project-container .text .description {
   line-height: 1.4rem;
@@ -182,18 +185,20 @@ header .container .navbar .display-nav ul li button:hover {
 }
 
 .about {
-  background-color: #238478;
-  padding: 1.5rem 1rem;
+  background: rgb(180, 210, 216);
+  background: linear-gradient(0deg, rgb(180, 210, 216) 0%, rgb(42, 157, 143) 100%);
+  padding: 3rem 1rem 2rem 1rem;
 }
 .about p {
   margin-top: 0.4rem;
   line-height: 1.4rem;
+  padding: 0.5rem;
 }
 
 .contact {
-  background-color: #264653;
+  background-color: #b4d2d8;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem 3rem 1rem;
 }
 .contact .container {
   max-width: 360px;
@@ -221,7 +226,7 @@ header .container .navbar .display-nav ul li button:hover {
 }
 
 footer {
-  background-color: #264653;
+  background-color: #b4d2d8;
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -229,6 +234,7 @@ footer {
 @media (min-width: 760px) {
   .container {
     max-width: unset;
+    width: 100%;
   }
   header .container .navbar {
     width: 50%;
@@ -272,6 +278,9 @@ footer {
   }
   header .container .navbar nav ul li button:hover {
     background-color: #e76f51;
+  }
+  .intro {
+    padding-left: 15%;
   }
   .projects .container .projects-container .project-container {
     display: grid;
@@ -317,11 +326,47 @@ footer {
     grid-column: 1/7;
   }
 }
-@media (min-width: 760px) and (min-width: 1024px) {
-  .projects .container {
+@media (min-width: 1024px) {
+  .container {
     max-width: 1200px;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  header {
+    font-size: 1.3rem;
+  }
+  header .logo a {
+    font-size: 2rem;
+  }
+  header .container .navbar nav ul li button {
+    font-size: 1.1rem;
+  }
+  .intro {
+    padding-left: 20%;
+  }
+  .intro h1 {
+    font-size: 4.5rem;
+  }
+  .intro h2 {
+    font-size: 2.5rem;
+  }
+  .projects .container .projects-container .project-container .text .project-title {
+    font-size: 1.7rem;
   }
   .projects .container .projects-container .project-container .photo {
     max-width: 600px;
+  }
+  .projects .container .projects-container .project-container .photo:hover .project-links {
+    height: 99%;
+  }
+  .projects .container .projects-container .project-container .photo:hover .project-links a.github svg {
+    width: 40px;
+  }
+  .projects .container .projects-container .project-container .photo:hover .project-links a.external-link svg {
+    height: 80px;
+  }
+  .contact .container ul li a svg {
+    width: 40px;
   }
 }/*# sourceMappingURL=styles.css.map */
