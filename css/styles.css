@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@400;700&family=Lemon&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
 :root {
   --hover: #20dec8;
   --dark-bgr:#132329;
@@ -30,6 +31,10 @@ a {
   margin: 0 auto 0 auto;
 }
 
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -47,6 +52,7 @@ header .container {
 }
 header .container .logo {
   font-size: 1.7rem;
+  font-family: "lato", sans-serif;
 }
 header .container .navbar img {
   width: 30px;
@@ -67,6 +73,7 @@ header .container .navbar .display-nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 header .container .navbar .display-nav span {
   position: absolute;
@@ -94,7 +101,7 @@ header .container .navbar .display-nav ul li button {
   border-radius: 5px;
   padding: 7px 10px 7px 10px;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 1rem;
 }
 header .container .navbar .display-nav ul li button:hover {
@@ -109,6 +116,7 @@ header .container .navbar .display-nav ul li button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "montserrat", sans-serif;
 }
 .intro h1 {
   font-size: 3rem;
@@ -116,6 +124,7 @@ header .container .navbar .display-nav ul li button:hover {
 }
 
 .projects {
+  font-family: "Lato", sans-serif;
   padding: 3rem 1rem 1rem 1rem;
 }
 .projects .container h2 {
@@ -189,6 +198,7 @@ header .container .navbar .display-nav ul li button:hover {
 }
 
 .about {
+  font-family: "Inter", sans-serif;
   padding: 3rem 1rem 2rem 1rem;
 }
 .about h2 {
@@ -196,13 +206,14 @@ header .container .navbar .display-nav ul li button:hover {
 }
 .about p {
   margin-top: 0.4rem;
-  line-height: 1.4rem;
   padding: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .contact {
   background-color: var(--light-bgr);
   text-align: center;
+  font-family: "Inter", sans-serif;
   padding: 4rem 1rem 3rem 1rem;
 }
 .contact .container {
@@ -217,6 +228,7 @@ header .container .navbar .display-nav ul li button:hover {
 }
 .contact .container p {
   margin-bottom: 2rem;
+  font-size: 1.1rem;
 }
 .contact .container ul {
   display: flex;
@@ -234,6 +246,7 @@ footer {
   background-color: var(--light-bgr);
   text-align: center;
   padding-bottom: 1rem;
+  font-family: "montserrat", sans-serif;
 }
 
 @media (min-width: 760px) {
@@ -249,6 +262,7 @@ footer {
   }
   header .container .navbar nav {
     display: flex;
+    font-family: "Lato", sans-serif;
   }
   header .container .navbar nav #close-menu {
     display: none;
@@ -278,7 +292,7 @@ footer {
     border-radius: 8px;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
   }
   header .container .navbar nav ul li button:hover {
@@ -374,7 +388,7 @@ footer {
     height: 80px;
   }
   .about p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
   .contact .container ul li a svg {
     width: 40px;

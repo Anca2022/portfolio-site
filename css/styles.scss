@@ -1,10 +1,10 @@
-//palette1: #264653;
-// #2a9d8f;
-// #e9c46a;
-// #f4a261;
-// #e76f51;  
+//download fonts? 
 // de reparat - mobile menu - sa inchia meniul la click pe link
 // hover effect on hover - navbar + project img
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@400;700&family=Lemon&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
 :root{
     --hover: #20dec8;
     --dark-bgr:#132329; 
@@ -19,6 +19,7 @@
 body{
     margin:0;
     font-size:18px;
+    // font-family: 'Montserrat', sans-serif;
 }
 ul{
     list-style: none;
@@ -27,10 +28,12 @@ a{
     text-decoration:none;
     color:black;
 }
-
 .container{
     max-width:600px;
     margin:0 auto 0 auto;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
 }
 header{
     position:fixed;
@@ -47,6 +50,7 @@ header{
         align-items:center;
         .logo{
             font-size: 1.7rem;
+            font-family: 'lato',sans-serif; 
         }
         .navbar{
             img{
@@ -63,12 +67,12 @@ header{
                 right:0;
                 height:100vh;
                 width:100vw;
-                background-color:var(--dark-bgr);// #4fa1a3;//#264653;
-                //opacity:0.95;
+                background-color:var(--dark-bgr);
                 display:flex;
                 flex-direction:column;
                 justify-content: center;
                 align-items: center;
+                font-family: 'Montserrat', sans-serif;
                 span{
                     position:absolute;
                     top:20px;
@@ -95,7 +99,7 @@ header{
                             border-radius: 5px;
                             padding:7px 10px 7px 10px;
                             font-size:1.2rem;
-                            font-weight:600;
+                            font-weight:700;
                             margin-top:1rem;
                             &:hover{
                                 background-color: var(--hover);
@@ -113,14 +117,13 @@ header{
 }
 
 .intro{
-
     height:100vh;
     padding-left:1rem;
     padding-bottom:1rem;
     display:flex;
     flex-direction:column;
     justify-content: center;
-    
+    font-family: 'montserrat', sans-serif;
     h1{
         font-size:3rem;
         margin-bottom:1rem;
@@ -128,7 +131,7 @@ header{
 }
 
 .projects{
-   
+    font-family: 'Lato', sans-serif;
     padding:3rem 1rem 1rem 1rem;
     .container{
         h2{
@@ -213,20 +216,21 @@ header{
     
 } 
 .about{
-    
+    font-family: 'Inter', sans-serif;
     padding:3rem 1rem 2rem 1rem;
     h2{
         margin-bottom:1rem;
     }
     p{
         margin-top:0.4rem;
-        line-height: 1.4rem;
         padding:0.5rem;
+        font-size:1.1rem;
     }
 }
 .contact{
     background-color:var(--light-bgr);
     text-align:center;
+    font-family: 'Inter', sans-serif;
     padding: 4rem 1rem 3rem 1rem;
     .container{
         max-width:360px;
@@ -239,6 +243,7 @@ header{
         }
         p{
             margin-bottom: 2rem;
+            font-size:1.1rem;
         }
         ul{
             display:flex;
@@ -261,6 +266,7 @@ footer{
     background-color: var(--light-bgr);
     text-align:center;
     padding-bottom:1rem;
+    font-family: 'montserrat', sans-serif;
 }
 
 @media (min-width:760px){
@@ -279,7 +285,7 @@ footer{
                 }
                 nav{
                     display:flex;
-                    
+                    font-family: 'Lato', sans-serif;
                     #close-menu{
                         display:none;
                     }
@@ -308,7 +314,7 @@ footer{
                                 border-radius:8px;
                                 padding: 0.5rem 1rem;
                                 font-size:1rem;
-                                font-weight: 600;
+                                font-weight: 700; 
                                 cursor: pointer;
                                 &:hover{
                                     background-color: var(--hover);
@@ -434,7 +440,7 @@ footer{
     }  
     .about{
         p{ 
-            font-size:1.2rem;
+            font-size:1.15rem;
         }
     }
     .contact{
