@@ -5,6 +5,8 @@
 //#e76f51;  
 // de reparat - mobile menu - sa inchia meniul la click pe link
 // hover effect on hover - navbar + project img
+
+//!!! de facut 4k 
 *{
     padding:0;
     margin:0;
@@ -141,7 +143,7 @@ header{
                     }
                     .description{
                         line-height: 1.4rem;
-                        font-size:1.05rem;
+                        font-size:1rem;
                         margin-bottom:1rem;
                         background-color:#132329;
                         color:rgb(216, 214, 212);
@@ -172,11 +174,9 @@ header{
                 }
                 .photo{
                     position:relative;
-                    width:300px;
                     margin:1rem auto 1.5rem auto;
                     img{
-                        width:300px;
-                       
+                        width:100%;                       
                     }
                     .project-links{
                         display:none;
@@ -322,7 +322,6 @@ footer{
         }
     }
     .intro{
-        //text-align: left;
         padding-left:15%;
     }
     .projects{
@@ -352,13 +351,9 @@ footer{
                         }
                     }
                     .photo{
-                        width:100%;
                         grid-column:5/11;
                         grid-row:1/2;
                         margin-right:0;
-                        img{
-                            width:100%;
-                        }
                     }
                 }
                 .alternate{
@@ -416,6 +411,9 @@ footer{
                         .project-title{
                             font-size:1.7rem;
                         }
+                        .description{
+                            font-size: 1.1rem;
+                        }
                     }
                     .photo{
                         max-width:700px;
@@ -435,8 +433,93 @@ footer{
             }
         }
     }  
+    .about{
+        p{ 
+            font-size:1.2rem;
+        }
+    }
     .contact{
-        .container ul li a svg{ width:40px;}
+        .container ul li a svg{ 
+                                width:40px;
+                            }
     }
 }
 
+@media (min-width:2500px){
+    .container{
+        max-width:2000px;
+        h2{
+            font-size:2.3rem;
+        }
+    }
+    
+    header{
+        font-size:1.7rem;
+        .logo a{
+            font-size:2.7rem;
+        }
+        .container .navbar nav ul li{
+            margin-right: 10px;
+            button{
+                font-size:1.3rem;
+            }
+        } 
+    }
+    .intro{
+        h1{
+            font-size:5rem;
+        }
+        h2{
+            font-size:3rem;
+        }
+        padding-left:25%;
+    }
+    .projects{
+        .container{
+            h2{
+                text-align: center;
+                margin-bottom:3rem;
+            }
+            max-width:2300px;
+            .projects-container{
+                display:flex;
+                gap:2%;
+                flex-direction:row;
+                flex-wrap: wrap;
+                .project-container{
+                    flex-basis:49%;
+                    .text{
+                        .project-title{
+                            font-size:2rem;
+                        }
+                        .description{
+                            font-size: 1.3rem;
+                        }
+                        .technologies span{ 
+                            font-size:1rem;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    .about{
+        .container{
+            max-width:1400px;
+            h2{
+                text-align: center;
+                margin-top:2rem;
+            }
+        }
+        p{ 
+            font-size:1.4rem;
+        }
+    }
+    .contact{
+        font-size:1.2rem;
+        .container{ 
+            max-width: unset;
+            width:1000px;
+        }
+    }
+}

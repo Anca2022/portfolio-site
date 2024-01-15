@@ -123,7 +123,7 @@ header .container .navbar .display-nav ul li button:hover {
 }
 .projects .container .projects-container .project-container .text .description {
   line-height: 1.4rem;
-  font-size: 1.05rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   background-color: #132329;
   color: rgb(216, 214, 212);
@@ -151,11 +151,10 @@ header .container .navbar .display-nav ul li button:hover {
 }
 .projects .container .projects-container .project-container .photo {
   position: relative;
-  width: 300px;
   margin: 1rem auto 1.5rem auto;
 }
 .projects .container .projects-container .project-container .photo img {
-  width: 300px;
+  width: 100%;
 }
 .projects .container .projects-container .project-container .photo .project-links {
   display: none;
@@ -308,13 +307,9 @@ footer {
     width: 80%;
   }
   .projects .container .projects-container .project-container .photo {
-    width: 100%;
     grid-column: 5/11;
     grid-row: 1/2;
     margin-right: 0;
-  }
-  .projects .container .projects-container .project-container .photo img {
-    width: 100%;
   }
   .projects .container .projects-container .alternate .text {
     grid-column: 6/11;
@@ -360,6 +355,9 @@ footer {
   .projects .container .projects-container .project-container .text .project-title {
     font-size: 1.7rem;
   }
+  .projects .container .projects-container .project-container .text .description {
+    font-size: 1.1rem;
+  }
   .projects .container .projects-container .project-container .photo {
     max-width: 700px;
   }
@@ -372,7 +370,81 @@ footer {
   .projects .container .projects-container .project-container .photo:hover .project-links a.external-link svg {
     height: 80px;
   }
+  .about p {
+    font-size: 1.2rem;
+  }
   .contact .container ul li a svg {
     width: 40px;
+  }
+}
+@media (min-width: 2500px) {
+  .container {
+    max-width: 2000px;
+  }
+  .container h2 {
+    font-size: 2.3rem;
+  }
+  header {
+    font-size: 1.7rem;
+  }
+  header .logo a {
+    font-size: 2.7rem;
+  }
+  header .container .navbar nav ul li {
+    margin-right: 10px;
+  }
+  header .container .navbar nav ul li button {
+    font-size: 1.3rem;
+  }
+  .intro {
+    padding-left: 25%;
+  }
+  .intro h1 {
+    font-size: 5rem;
+  }
+  .intro h2 {
+    font-size: 3rem;
+  }
+  .projects .container {
+    max-width: 2300px;
+  }
+  .projects .container h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .projects .container .projects-container {
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .projects .container .projects-container .project-container {
+    flex-basis: 49%;
+  }
+  .projects .container .projects-container .project-container .text .project-title {
+    font-size: 2rem;
+  }
+  .projects .container .projects-container .project-container .text .description {
+    font-size: 1.3rem;
+  }
+  .projects .container .projects-container .project-container .text .technologies span {
+    font-size: 1rem;
+  }
+  .about .container {
+    max-width: 1400px;
+  }
+  .about .container h2 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .about p {
+    font-size: 1.4rem;
+  }
+  .contact {
+    font-size: 1.2rem;
+  }
+  .contact .container {
+    max-width: unset;
+    width: 1000px;
   }
 }/*# sourceMappingURL=styles.css.map */
