@@ -1,3 +1,10 @@
+:root {
+  --hover: #20dec8;
+  --dark-bgr:#132329;
+  --light-bgr:#dbe5e7;
+  --btn: #06c5ae;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -55,8 +62,7 @@ header .container .navbar .display-nav {
   right: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #4fa1a3;
-  color: rgb(26, 26, 26);
+  background-color: var(--dark-bgr);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,6 +73,7 @@ header .container .navbar .display-nav span {
   top: 20px;
   right: 19px;
   cursor: pointer;
+  color: var(--light-bgr);
 }
 header .container .navbar .display-nav ul li {
   font-size: 1.4rem;
@@ -74,16 +81,16 @@ header .container .navbar .display-nav ul li {
   text-align: center;
 }
 header .container .navbar .display-nav ul li a {
-  color: rgb(26, 26, 26);
+  color: var(--light-bgr);
 }
 header .container .navbar .display-nav ul li a:hover {
-  color: #ece7d5;
+  color: var(--hover);
 }
 header .container .navbar .display-nav ul li button {
-  background-color: #f4a261;
+  background-color: var(--btn);
   border: none;
   outline: none;
-  color: #264653;
+  color: var(--light-bgr);
   border-radius: 5px;
   padding: 7px 10px 7px 10px;
   font-size: 1.2rem;
@@ -91,12 +98,11 @@ header .container .navbar .display-nav ul li button {
   margin-top: 1rem;
 }
 header .container .navbar .display-nav ul li button:hover {
-  background-color: #ece7d5;
+  background-color: var(--hover);
+  color: var(--dark-bgr);
 }
 
 .intro {
-  background: rgb(42, 157, 143);
-  background: linear-gradient(0deg, rgb(42, 157, 143) 0%, rgb(255, 255, 255) 67%, rgb(255, 255, 255) 100%);
   height: 100vh;
   padding-left: 1rem;
   padding-bottom: 1rem;
@@ -110,7 +116,6 @@ header .container .navbar .display-nav ul li button:hover {
 }
 
 .projects {
-  background-color: #2a9d8f;
   padding: 3rem 1rem 1rem 1rem;
 }
 .projects .container h2 {
@@ -119,16 +124,16 @@ header .container .navbar .display-nav ul li button:hover {
 .projects .container .projects-container .project-container .text .project-title {
   margin-top: 3rem;
   margin-bottom: 1rem;
-  color: #132329;
 }
 .projects .container .projects-container .project-container .text .description {
   line-height: 1.4rem;
   font-size: 1rem;
   margin-bottom: 1rem;
-  background-color: #132329;
+  background-color: var(--dark-bgr);
   color: rgb(216, 214, 212);
   padding: 0.8rem;
   border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(80, 114, 107, 0.4);
 }
 .projects .container .projects-container .project-container .text .technologies {
   display: flex;
@@ -138,7 +143,7 @@ header .container .navbar .display-nav ul li button:hover {
   justify-content: center;
 }
 .projects .container .projects-container .project-container .text .technologies span {
-  background-color: #dbe5e7;
+  background-color: var(--light-bgr);
   border-radius: 5px;
   padding: 0.5rem;
   font-size: 14px;
@@ -179,13 +184,11 @@ header .container .navbar .display-nav ul li button:hover {
 .projects .container .projects-container .project-container .photo:hover .project-links a svg {
   width: 30px;
 }
-.projects .container .projects-container .project-container .photo:hover .project-links a:hover svg {
-  color: #cf4422;
+.projects .container .projects-container .project-container .photo:hover .project-links a:hover {
+  color: var(--hover);
 }
 
 .about {
-  background: rgb(180, 210, 216);
-  background: linear-gradient(0deg, rgb(180, 210, 216) 0%, rgb(42, 157, 143) 100%);
   padding: 3rem 1rem 2rem 1rem;
 }
 .about h2 {
@@ -198,7 +201,7 @@ header .container .navbar .display-nav ul li button:hover {
 }
 
 .contact {
-  background-color: #b4d2d8;
+  background-color: var(--light-bgr);
   text-align: center;
   padding: 4rem 1rem 3rem 1rem;
 }
@@ -221,14 +224,14 @@ header .container .navbar .display-nav ul li button:hover {
   justify-content: space-evenly;
 }
 .contact .container ul li a:hover {
-  color: #cf4422;
+  color: var(--hover);
 }
 .contact .container ul li svg {
   width: 30px;
 }
 
 footer {
-  background-color: #b4d2d8;
+  background-color: var(--light-bgr);
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -261,7 +264,7 @@ footer {
     padding: 0.4rem 1rem;
   }
   header .container .navbar nav ul li a:hover {
-    background-color: #dbe5e7;
+    background-color: var(--light-bgr);
     border-radius: 5px;
   }
   header .container .navbar nav ul li:last-child {
@@ -269,7 +272,7 @@ footer {
     text-align: right;
   }
   header .container .navbar nav ul li button {
-    background-color: #f15731;
+    background-color: var(--btn);
     outline: none;
     border: none;
     border-radius: 8px;
@@ -279,7 +282,7 @@ footer {
     cursor: pointer;
   }
   header .container .navbar nav ul li button:hover {
-    background-color: #e76f51;
+    background-color: var(--hover);
   }
   .intro {
     padding-left: 15%;

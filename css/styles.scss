@@ -1,12 +1,16 @@
 //palette1: #264653;
-//#2a9d8f;
-//#e9c46a;
-//#f4a261;
-//#e76f51;  
+// #2a9d8f;
+// #e9c46a;
+// #f4a261;
+// #e76f51;  
 // de reparat - mobile menu - sa inchia meniul la click pe link
 // hover effect on hover - navbar + project img
-
-//!!! de facut 4k 
+:root{
+    --hover: #20dec8;
+    --dark-bgr:#132329; 
+    --light-bgr:#dbe5e7;
+    --btn: #06c5ae;
+}
 *{
     padding:0;
     margin:0;
@@ -59,8 +63,7 @@ header{
                 right:0;
                 height:100vh;
                 width:100vw;
-                background-color: #4fa1a3;//#264653;
-                color:rgb(26, 26, 26);
+                background-color:var(--dark-bgr);// #4fa1a3;//#264653;
                 //opacity:0.95;
                 display:flex;
                 flex-direction:column;
@@ -71,6 +74,7 @@ header{
                     top:20px;
                     right:19px;
                     cursor: pointer;
+                    color:var(--light-bgr);
                 }
                 ul{
                     li{
@@ -78,23 +82,24 @@ header{
                         margin-bottom: 1rem;
                         text-align:center;
                         a{
-                            color:rgb(26, 26, 26);
+                            color:var(--light-bgr);
                         }
                         a:hover{
-                            color: #ece7d5;
+                            color: var(--hover);
                         }
                         button{
-                            background-color: #f4a261;
+                            background-color: var(--btn);
                             border:none;
                             outline: none;
-                            color: #264653;
+                            color:var(--light-bgr);
                             border-radius: 5px;
                             padding:7px 10px 7px 10px;
                             font-size:1.2rem;
                             font-weight:600;
                             margin-top:1rem;
                             &:hover{
-                                background-color: #ece7d5;
+                                background-color: var(--hover);
+                                color:var(--dark-bgr);
                             }
                         }
                     }
@@ -108,11 +113,7 @@ header{
 }
 
 .intro{
-    background: rgb(42,157,143);
-    background: linear-gradient(0deg, rgba(42,157,143,1) 0%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%);  
-//     background: rgb(42,157,143);
-// background: linear-gradient(0deg, rgba(42,157,143,1) 0%, rgba(50,161,147,1) 20%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%);
-    
+
     height:100vh;
     padding-left:1rem;
     padding-bottom:1rem;
@@ -127,7 +128,7 @@ header{
 }
 
 .projects{
-    background-color: #2a9d8f;
+   
     padding:3rem 1rem 1rem 1rem;
     .container{
         h2{
@@ -139,17 +140,16 @@ header{
                     .project-title{
                         margin-top:3rem;
                         margin-bottom:1rem;
-                        color:#132329;
                     }
                     .description{
                         line-height: 1.4rem;
                         font-size:1rem;
                         margin-bottom:1rem;
-                        background-color:#132329;
+                        background-color:var(--dark-bgr);
                         color:rgb(216, 214, 212);
                         padding:0.8rem;
                         border-radius: 5px;
-                       // box-shadow:2px 2px 5px rgba(80, 114, 107, 0.4);
+                       box-shadow:2px 2px 5px rgba(80, 114, 107, 0.4);
                     }     
                     .technologies{
                         display:flex;
@@ -159,7 +159,7 @@ header{
                         justify-content:center;
                         
                         span{
-                            background-color:#dbe5e7;// #c0ccce; 
+                            background-color:var(--light-bgr);// #c0ccce; 
                             border-radius:5px;
                             padding:0.5rem;
                             font-size: 14px;
@@ -202,7 +202,7 @@ header{
                                 width:30px;
                             }
                             a:hover {
-                                svg{color:#cf4422;}
+                                color:var(--hover);
                             }
                        } 
                     }
@@ -213,8 +213,7 @@ header{
     
 } 
 .about{
-    background: rgb(180,210,216);
-    background: linear-gradient(0deg, rgba(180,210,216,1) 0%, rgba(42,157,143,1) 100%);
+    
     padding:3rem 1rem 2rem 1rem;
     h2{
         margin-bottom:1rem;
@@ -226,7 +225,7 @@ header{
     }
 }
 .contact{
-    background-color:#b4d2d8;
+    background-color:var(--light-bgr);
     text-align:center;
     padding: 4rem 1rem 3rem 1rem;
     .container{
@@ -248,7 +247,7 @@ header{
             li{
                 
                 a:hover{
-                    color:#cf4422;//#2a9d8f;
+                    color:var(--hover);//#cf4422;
                 }
                 svg{
                     width:30px;
@@ -259,7 +258,7 @@ header{
 }
 
 footer{
-    background-color: #b4d2d8;
+    background-color: var(--light-bgr);
     text-align:center;
     padding-bottom:1rem;
 }
@@ -295,7 +294,7 @@ footer{
                                 padding:0.4rem 1rem;
                             }
                             a:hover{
-                                background-color:#dbe5e7;// lightgray;
+                                background-color:var(--light-bgr);// lightgray;
                                 border-radius:5px;
                             }
                             &:last-child{
@@ -303,7 +302,7 @@ footer{
                                 text-align: right;
                             }
                             button{
-                                background-color:#f15731;//#e9c46a;
+                                background-color:var(--btn);//#e9c46a;
                                 outline:none;
                                 border:none;
                                 border-radius:8px;
@@ -312,7 +311,7 @@ footer{
                                 font-weight: 600;
                                 cursor: pointer;
                                 &:hover{
-                                    background-color: #e76f51;
+                                    background-color: var(--hover);
                                 }
                             }
                         }
