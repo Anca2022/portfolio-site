@@ -126,25 +126,28 @@ header{
 
 .projects{
     background-color: #2a9d8f;
-    padding:3rem 1rem 2rem 1rem;
+    padding:3rem 1rem 1rem 1rem;
     .container{
         h2{
             margin-bottom:2rem;
         }
         .projects-container{
             .project-container{
-                margin-bottom:1rem;
                 .text{
                     .project-title{
-                        margin-bottom:0.5rem;
+                        margin-top:3rem;
+                        margin-bottom:1rem;
+                        color:#132329;
                     }
                     .description{
                         line-height: 1.4rem;
+                        font-size:1.05rem;
                         margin-bottom:1rem;
-                        background-color:rgb(71, 71, 71);
-                        padding:0.3rem 0.8rem;
+                        background-color:#132329;
+                        color:rgb(216, 214, 212);
+                        padding:0.8rem;
                         border-radius: 5px;
-                        box-shadow:1px 1px 5px rgb(42, 42, 42);
+                       // box-shadow:2px 2px 5px rgba(80, 114, 107, 0.4);
                     }     
                     .technologies{
                         display:flex;
@@ -154,7 +157,7 @@ header{
                         justify-content:center;
                         
                         span{
-                            background-color: #e9c46a; 
+                            background-color:#dbe5e7;// #c0ccce; 
                             border-radius:5px;
                             padding:0.5rem;
                             font-size: 14px;
@@ -185,7 +188,7 @@ header{
                             top:0;
                             width:100%;
                             height:98%;
-                            background-color: rgba(255,0,0,0.3);
+                            background-color: rgba(0,0,0,0.3);
                             display:flex;
                             justify-content: center;
                             align-items: center;
@@ -199,7 +202,7 @@ header{
                                 width:30px;
                             }
                             a:hover {
-                                svg{color:red}
+                                svg{color:#cf4422;}
                             }
                        } 
                     }
@@ -211,8 +214,11 @@ header{
 } 
 .about{
     background: rgb(180,210,216);
-background: linear-gradient(0deg, rgba(180,210,216,1) 0%, rgba(42,157,143,1) 100%);
+    background: linear-gradient(0deg, rgba(180,210,216,1) 0%, rgba(42,157,143,1) 100%);
     padding:3rem 1rem 2rem 1rem;
+    h2{
+        margin-bottom:1rem;
+    }
     p{
         margin-top:0.4rem;
         line-height: 1.4rem;
@@ -242,7 +248,7 @@ background: linear-gradient(0deg, rgba(180,210,216,1) 0%, rgba(42,157,143,1) 100
             li{
                 
                 a:hover{
-                    color:#2a9d8f;
+                    color:#cf4422;//#2a9d8f;
                 }
                 svg{
                     width:30px;
@@ -289,7 +295,7 @@ footer{
                                 padding:0.4rem 1rem;
                             }
                             a:hover{
-                                background-color: lightgray;
+                                background-color:#dbe5e7;// lightgray;
                                 border-radius:5px;
                             }
                             &:last-child{
@@ -297,7 +303,7 @@ footer{
                                 text-align: right;
                             }
                             button{
-                                background-color:#e9c46a;
+                                background-color:#f15731;//#e9c46a;
                                 outline:none;
                                 border:none;
                                 border-radius:8px;
@@ -328,16 +334,18 @@ footer{
                     grid-template-columns: repeat(10, 1fr);
                     .text{
                         grid-column: 1/6;
-                        grid-row:1/1;
+                        grid-row:1/2;
                         z-index:2;
                         display:flex;
                         flex-direction: column;
                         justify-content: center;
                         .project-title{
+                            margin-top:0; 
+                            margin-bottom:1.5rem;
                             width:80%;
                             text-align:center; 
                             font-size:1.5rem; 
-                            margin-bottom:0.6rem;
+                            
                         }
                         .technologies{
                             width:80%;
@@ -346,7 +354,8 @@ footer{
                     .photo{
                         width:100%;
                         grid-column:5/11;
-                        grid-row:1/1;
+                        grid-row:1/2;
+                        margin-right:0;
                         img{
                             width:100%;
                         }
@@ -366,7 +375,7 @@ footer{
                     }
                     .photo{
                         grid-column:1/7;
-                    
+                        margin-left:0;
                     }
                 }
             }
@@ -409,7 +418,7 @@ footer{
                         }
                     }
                     .photo{
-                        max-width:600px;
+                        max-width:700px;
                         &:hover{
                             .project-links{
                                 height:99%;

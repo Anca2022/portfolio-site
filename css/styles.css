@@ -111,24 +111,24 @@ header .container .navbar .display-nav ul li button:hover {
 
 .projects {
   background-color: #2a9d8f;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 3rem 1rem 1rem 1rem;
 }
 .projects .container h2 {
   margin-bottom: 2rem;
 }
-.projects .container .projects-container .project-container {
-  margin-bottom: 1rem;
-}
 .projects .container .projects-container .project-container .text .project-title {
-  margin-bottom: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #132329;
 }
 .projects .container .projects-container .project-container .text .description {
   line-height: 1.4rem;
+  font-size: 1.05rem;
   margin-bottom: 1rem;
-  background-color: rgb(71, 71, 71);
-  padding: 0.3rem 0.8rem;
+  background-color: #132329;
+  color: rgb(216, 214, 212);
+  padding: 0.8rem;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px rgb(42, 42, 42);
 }
 .projects .container .projects-container .project-container .text .technologies {
   display: flex;
@@ -138,7 +138,7 @@ header .container .navbar .display-nav ul li button:hover {
   justify-content: center;
 }
 .projects .container .projects-container .project-container .text .technologies span {
-  background-color: #e9c46a;
+  background-color: #dbe5e7;
   border-radius: 5px;
   padding: 0.5rem;
   font-size: 14px;
@@ -166,7 +166,7 @@ header .container .navbar .display-nav ul li button:hover {
   top: 0;
   width: 100%;
   height: 98%;
-  background-color: rgba(255, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,13 +181,16 @@ header .container .navbar .display-nav ul li button:hover {
   width: 30px;
 }
 .projects .container .projects-container .project-container .photo:hover .project-links a:hover svg {
-  color: red;
+  color: #cf4422;
 }
 
 .about {
   background: rgb(180, 210, 216);
   background: linear-gradient(0deg, rgb(180, 210, 216) 0%, rgb(42, 157, 143) 100%);
   padding: 3rem 1rem 2rem 1rem;
+}
+.about h2 {
+  margin-bottom: 1rem;
 }
 .about p {
   margin-top: 0.4rem;
@@ -219,7 +222,7 @@ header .container .navbar .display-nav ul li button:hover {
   justify-content: space-evenly;
 }
 .contact .container ul li a:hover {
-  color: #2a9d8f;
+  color: #cf4422;
 }
 .contact .container ul li svg {
   width: 30px;
@@ -259,7 +262,7 @@ footer {
     padding: 0.4rem 1rem;
   }
   header .container .navbar nav ul li a:hover {
-    background-color: lightgray;
+    background-color: #dbe5e7;
     border-radius: 5px;
   }
   header .container .navbar nav ul li:last-child {
@@ -267,7 +270,7 @@ footer {
     text-align: right;
   }
   header .container .navbar nav ul li button {
-    background-color: #e9c46a;
+    background-color: #f15731;
     outline: none;
     border: none;
     border-radius: 8px;
@@ -288,17 +291,18 @@ footer {
   }
   .projects .container .projects-container .project-container .text {
     grid-column: 1/6;
-    grid-row: 1/1;
+    grid-row: 1/2;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .projects .container .projects-container .project-container .text .project-title {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
     width: 80%;
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 0.6rem;
   }
   .projects .container .projects-container .project-container .text .technologies {
     width: 80%;
@@ -306,7 +310,8 @@ footer {
   .projects .container .projects-container .project-container .photo {
     width: 100%;
     grid-column: 5/11;
-    grid-row: 1/1;
+    grid-row: 1/2;
+    margin-right: 0;
   }
   .projects .container .projects-container .project-container .photo img {
     width: 100%;
@@ -324,6 +329,7 @@ footer {
   }
   .projects .container .projects-container .alternate .photo {
     grid-column: 1/7;
+    margin-left: 0;
   }
 }
 @media (min-width: 1024px) {
@@ -355,7 +361,7 @@ footer {
     font-size: 1.7rem;
   }
   .projects .container .projects-container .project-container .photo {
-    max-width: 600px;
+    max-width: 700px;
   }
   .projects .container .projects-container .project-container .photo:hover .project-links {
     height: 99%;
