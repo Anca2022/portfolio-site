@@ -15,6 +15,7 @@
 body {
   margin: 0;
   font-size: 18px;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
@@ -171,30 +172,36 @@ header .container .navbar .display-nav ul li button:hover {
   width: 100%;
 }
 .projects .container .projects-container .project-container .photo .project-links {
-  display: none;
-}
-.projects .container .projects-container .project-container .photo:hover .project-links {
-  display: block;
   position: absolute;
   top: 0;
   width: 100%;
-  height: 98%;
+  height: 99%;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-clip-path: circle(0% at 0% 0%);
+          clip-path: circle(0% at 0% 0%);
+  transition: -webkit-clip-path 0.5s ease-in;
+  transition: clip-path 0.5s ease-in;
+  transition: clip-path 0.5s ease-in, -webkit-clip-path 0.5s ease-in;
 }
-.projects .container .projects-container .project-container .photo:hover .project-links a.github {
+.projects .container .projects-container .project-container .photo .project-links a.github {
   margin-right: 10px;
 }
-.projects .container .projects-container .project-container .photo:hover .project-links a.external-link {
+.projects .container .projects-container .project-container .photo .project-links a.external-link {
   margin-left: 10px;
 }
-.projects .container .projects-container .project-container .photo:hover .project-links a svg {
+.projects .container .projects-container .project-container .photo .project-links a svg {
   width: 30px;
+  color: white;
 }
-.projects .container .projects-container .project-container .photo:hover .project-links a:hover {
+.projects .container .projects-container .project-container .photo .project-links a:hover svg {
   color: var(--hover);
+}
+.projects .container .projects-container .project-container .photo:hover .project-links {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
 }
 
 .about {
@@ -378,13 +385,10 @@ footer {
   .projects .container .projects-container .project-container .photo {
     max-width: 700px;
   }
-  .projects .container .projects-container .project-container .photo:hover .project-links {
-    height: 99%;
-  }
-  .projects .container .projects-container .project-container .photo:hover .project-links a.github svg {
+  .projects .container .projects-container .project-container .photo .project-links a.github svg {
     width: 40px;
   }
-  .projects .container .projects-container .project-container .photo:hover .project-links a.external-link svg {
+  .projects .container .projects-container .project-container .photo .project-links a.external-link svg {
     height: 80px;
   }
   .about p {
