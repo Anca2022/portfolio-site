@@ -124,6 +124,9 @@ header .container .navbar .display-nav ul li button:hover {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+.intro h2 {
+  color: var(--hover);
+}
 
 .projects {
   font-family: "Lato", sans-serif;
@@ -311,6 +314,9 @@ footer {
   }
   .intro {
     padding-left: 15%;
+  }
+  .projects {
+    margin-bottom: 5rem;
   }
   .projects .container .projects-container .project-container {
     display: grid;
