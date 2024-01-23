@@ -4,7 +4,7 @@
   --dark-bgr:#1d353e;
   --menu-brg:#132329;
   --light-bgr:#dbe5e7;
-  --btn: #20dec8;
+  --btn: #20dfc9;
 }
 
 * {
@@ -95,20 +95,18 @@ header .container .navbar .display-nav ul li a {
 header .container .navbar .display-nav ul li a:hover {
   color: var(--hover);
 }
-header .container .navbar .display-nav ul li button {
+header .container .navbar .display-nav ul li .button {
+  display: inline-block;
   background-color: var(--btn);
-  border: none;
-  outline: none;
-  color: var(--light-bgr);
   border-radius: 5px;
-  padding: 7px 10px 7px 10px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-top: 1rem;
+  padding: 7px 15px 7px 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
 }
-header .container .navbar .display-nav ul li button:hover {
+header .container .navbar .display-nav ul li .button:hover {
   background-color: var(--hover);
-  color: var(--dark-bgr);
+  color: white;
 }
 
 .intro {
@@ -298,19 +296,17 @@ footer {
     width: 130px;
     text-align: right;
   }
-  header .container .navbar nav ul li button {
+  header .container .navbar nav ul li .button {
     background-color: var(--btn);
     color: white;
-    outline: none;
-    border: none;
     border-radius: 8px;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    font-size: 1.15rem;
     font-weight: 700;
-    cursor: pointer;
   }
-  header .container .navbar nav ul li button:hover {
+  header .container .navbar nav ul li .button:hover {
     background-color: var(--hover);
+    border-radius: 8px;
   }
   .intro {
     padding-left: 15%;
@@ -374,8 +370,8 @@ footer {
   header .logo a {
     font-size: 2rem;
   }
-  header .container .navbar nav ul li button {
-    font-size: 1.1rem;
+  header .container .navbar nav ul li .button {
+    font-size: 1.35rem;
   }
   .intro {
     padding-left: 20%;
@@ -438,8 +434,8 @@ footer {
   header .container .navbar nav ul li {
     margin-right: 10px;
   }
-  header .container .navbar nav ul li button {
-    font-size: 1.3rem;
+  header .container .navbar nav ul li .button {
+    font-size: 1.5rem;
   }
   .intro {
     padding-left: 25%;

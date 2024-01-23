@@ -91,19 +91,17 @@ header{
                         a:hover{
                             color: var(--hover);
                         }
-                        button{
+                        .button{
+                            display:inline-block;
                             background-color: var(--btn);
-                            border:none;
-                            outline: none;
-                            color:var(--light-bgr);
                             border-radius: 5px;
-                            padding:7px 10px 7px 10px;
-                            font-size:1.2rem;
-                            font-weight:700;
-                            margin-top:1rem;
+                            padding:7px 15px 7px 15px;
+                            font-size:1.3rem;
+                            font-weight:600;
+                            margin-top:1.5rem;
                             &:hover{
                                 background-color: var(--hover);
-                                color:var(--dark-bgr);
+                                color:white;
                             }
                         }
                     }
@@ -279,7 +277,6 @@ footer{
     .container{
         max-width:unset;
         width:100%;
-        //de revenit cand stabilim max-width
     }
     header{
         .container{
@@ -303,6 +300,7 @@ footer{
                         li{
                             a{
                                 padding:0.4rem 1rem;
+                                
                             }
                             a:hover{
                                 background-color:var(--light-bgr);
@@ -312,18 +310,16 @@ footer{
                                 width:130px;
                                 text-align: right;
                             }
-                            button{
+                            .button{
                                 background-color:var(--btn);
                                 color:white;
-                                outline:none;
-                                border:none;
                                 border-radius:8px;
-                                padding: 0.5rem 1rem;
-                                font-size:1rem;
+                                padding: 0.4rem 1rem;
+                                font-size:1.15rem;
                                 font-weight: 700; 
-                                cursor: pointer;
                                 &:hover{
                                     background-color: var(--hover);
+                                    border-radius:8px;
                                 }
                             }
                         }
@@ -402,8 +398,8 @@ footer{
         .logo a{
             font-size:2rem;
         }
-        .container .navbar nav ul li button{
-                                        font-size:1.1rem;
+        .container .navbar nav ul li .button{
+                                        font-size:1.35rem;
                                      }
     }
     .intro{
@@ -484,8 +480,8 @@ footer{
         }
         .container .navbar nav ul li{
             margin-right: 10px;
-            button{
-                font-size:1.3rem;
+            .button{
+                font-size:1.5rem;
             }
         } 
     }
