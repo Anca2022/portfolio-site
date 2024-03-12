@@ -540,6 +540,10 @@ footer{
         .container{ 
             max-width: unset;
             width:1000px;
+            ul{
+                max-width:300px;
+                margin:0 auto;
+            }
         }
     }
 }

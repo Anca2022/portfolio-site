@@ -488,4 +488,8 @@ footer {
     max-width: unset;
     width: 1000px;
   }
+  .contact .container ul {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
