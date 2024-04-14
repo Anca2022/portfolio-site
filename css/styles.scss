@@ -16,6 +16,9 @@
     margin:0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin:0;
     font-size:18px;
@@ -115,7 +118,7 @@ header{
 }
 
 .intro{
-    height:100vh;
+    height: calc(100vh - 5rem);
     padding-left:1rem;
     padding-bottom:1rem;
     display:flex;
@@ -133,7 +136,7 @@ header{
 
 .projects{
     font-family: 'Lato', sans-serif;
-    padding:3rem 1rem 1rem 1rem;
+    padding:5rem 1rem 2rem 1rem;
     .container{
         h2{
             margin-bottom:2rem;
@@ -220,7 +223,7 @@ header{
 } 
 .about{
     font-family: 'Inter', sans-serif;
-    padding:3rem 1rem 2rem 1rem;
+    padding:5rem 1rem 0 1rem;
     h2{
         margin-bottom:1rem;
     }
@@ -332,7 +335,7 @@ footer{
         padding-left:15%;
     }
     .projects{
-        margin-bottom: 5rem; 
+       padding-bottom:3rem;
         .container{
             .projects-container{
                 .project-container{

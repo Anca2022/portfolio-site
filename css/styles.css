@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-size: 18px;
@@ -110,7 +114,7 @@ header .container .navbar .display-nav ul li .button:hover {
 }
 
 .intro {
-  height: 100vh;
+  height: calc(100vh - 5rem);
   padding-left: 1rem;
   padding-bottom: 1rem;
   display: flex;
@@ -128,7 +132,7 @@ header .container .navbar .display-nav ul li .button:hover {
 
 .projects {
   font-family: "Lato", sans-serif;
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 5rem 1rem 2rem 1rem;
 }
 .projects .container h2 {
   margin-bottom: 2rem;
@@ -210,7 +214,7 @@ header .container .navbar .display-nav ul li .button:hover {
 
 .about {
   font-family: "Inter", sans-serif;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 5rem 1rem 0 1rem;
 }
 .about h2 {
   margin-bottom: 1rem;
@@ -312,7 +316,7 @@ footer {
     padding-left: 15%;
   }
   .projects {
-    margin-bottom: 5rem;
+    padding-bottom: 3rem;
   }
   .projects .container .projects-container .project-container {
     display: grid;

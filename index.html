@@ -16,9 +16,9 @@
                 <nav id="nav">
                     <span id="close-menu"><svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" fill="currentColor" viewBox="0 0 384 512"><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg></span>
                     <ul>
-                        <li><a href=#projects >Projects</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about" onclick="closeMenu2()">About</a></li>
+                        <li><a href=#projects onclick="closeMenu2()">Projects</a></li>
+                        <li><a href="#contact" onclick="closeMenu2()">Contact</a></li>
                         <li><a class="button" href="AncaMateiResume.pdf" target="_blank">Resume</a></li>
                     </ul>
                 </nav>
@@ -31,13 +31,12 @@
             <h1>Anca Matei</h1>
             <h2>Frontend Web Developer </h2>
         </div>
-        
     </section>
 
     <section class="about" id="about">
         <div class="container">
             <h2>About me</h2>
-            <p>I am a JavaScript developer specializing in the Angular frontend framework, with a focus on responsive design.</p>
+            <p>I am a JavaScript developer specializing in the Angular framework, with a focus on responsive design.</p>
             <p>My unique background in medicine has instilled in me a strong sense of discipline, promoting continuous skill development and adaptability to diverse working environments and team dynamics, traits that I bring into my work as a developer.     
                I am eager to collaborate on projects as an integral part of a team. 
             </p>
@@ -56,8 +55,8 @@
                 <article class="project-container">
                     <div class="text">
                         <h3 class="project-title">EuroTour Website</h3>
-                        <p class="description">This project aims to provide a user-friendly platform for a car rental firm based in Cluj-Napoca. 
-                            Google Translate is incorporated into the website for multilingual support. The website integrates Contentful CMS for backend management alongside EmailJS for transmitting form data to email addresses.
+                        <p class="description">This project aims to provide a user-friendly platform for a car rental firm based in Cluj-Napoca. The webpage is built in Angular (version 17.0.3) and 
+                            Google Translate is incorporated for multilingual support. The website integrates Contentful CMS for backend management alongside EmailJS for transmitting form data to email addresses.
                         </p>
                         <div class="technologies">
                             <span><img src="images/html5.svg" alt="HTML5 icon">HTML5</span> 
@@ -77,7 +76,7 @@
                 <article class="project-container alternate">
                     <div class="text">
                         <h3 class="project-title">Kindergarden website</h3>
-                        <p class="description">This task serves as a hands-on learning experience for practicing CSS skills by creating a website for a fictional kindergarten. The design is based on a free CSS template, providing a starting point for exploration and enhancement.</p>
+                        <p class="description">This task serves as a hands-on learning experience for practicing CSS skills by creating a website for a fictional kindergarten. The design is based on a free CSS template. The project focuses on style and does not take into account the webpage's responsiveness.</p>
                         <div class="technologies">
                             <span><img src="images/html5.svg" alt="HTML5 icon">HTML5</span> 
                             <span><img src="images/css3.svg" alt="CSS icon">CSS</span> 

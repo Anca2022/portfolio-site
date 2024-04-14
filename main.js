@@ -14,3 +14,7 @@ function closeMenu(e){
         nav.classList.remove('display-nav');
     }
 }
+
+function closeMenu2(){
+    nav.classList.remove('display-nav');
+}
