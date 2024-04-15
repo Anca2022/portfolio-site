@@ -130,6 +130,19 @@ header .container .navbar .display-nav ul li .button:hover {
   color: var(--hover);
 }
 
+.about {
+  font-family: "Inter", sans-serif;
+  padding: 5rem 1rem 0 1rem;
+}
+.about h2 {
+  margin-bottom: 1rem;
+}
+.about p {
+  margin-top: 0.4rem;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
 .projects {
   font-family: "Lato", sans-serif;
   padding: 5rem 1rem 2rem 1rem;
@@ -175,6 +188,8 @@ header .container .navbar .display-nav ul li .button:hover {
   margin: 1rem auto 1.5rem auto;
   aspect-ratio: 4/3;
   overflow: hidden;
+  max-width: 400px;
+  border-radius: 5px;
 }
 .projects .container .projects-container .project-container .photo img {
   width: 100%;
@@ -210,19 +225,6 @@ header .container .navbar .display-nav ul li .button:hover {
 .projects .container .projects-container .project-container .photo:hover .project-links {
   -webkit-clip-path: circle(100%);
           clip-path: circle(100%);
-}
-
-.about {
-  font-family: "Inter", sans-serif;
-  padding: 5rem 1rem 0 1rem;
-}
-.about h2 {
-  margin-bottom: 1rem;
-}
-.about p {
-  margin-top: 0.4rem;
-  padding: 0.5rem;
-  font-size: 1.1rem;
 }
 
 .contact {
@@ -319,6 +321,7 @@ footer {
     padding-bottom: 3rem;
   }
   .projects .container .projects-container .project-container {
+    margin-bottom: 2rem;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
   }
@@ -338,15 +341,16 @@ footer {
     font-size: 1.5rem;
   }
   .projects .container .projects-container .project-container .text .technologies {
-    width: 65%;
+    width: 80%;
   }
   .projects .container .projects-container .project-container .photo {
-    grid-column: 5/11;
+    grid-column: 6/11;
     grid-row: 1/2;
     margin-right: 0;
+    max-width: unset;
   }
   .projects .container .projects-container .alternate .text {
-    grid-column: 5/11;
+    grid-column: 6/11;
   }
   .projects .container .projects-container .alternate .text .project-title {
     width: 100%;
@@ -354,7 +358,7 @@ footer {
   }
   .projects .container .projects-container .alternate .text .technologies {
     width: 100%;
-    padding-left: 35%;
+    padding-left: 20%;
   }
   .projects .container .projects-container .alternate .photo {
     grid-column: 1/7;
@@ -386,18 +390,22 @@ footer {
   .intro h2 {
     font-size: 2.5rem;
   }
-  .projects .container .projects-container .project-container .text {
-    grid-column: 1/6;
-  }
-  .projects .container .projects-container .project-container .text .project-title, .projects .container .projects-container .project-container .text .technologies {
+  .projects .container .projects-container .project-container .text .project-title {
     font-size: 1.7rem;
-    width: 80%;
   }
   .projects .container .projects-container .project-container .text .description {
     font-size: 1.1rem;
   }
+  .projects .container .projects-container .project-container .text .technologies span {
+    margin-top: 0.8rem;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 0.9rem;
+  }
+  .projects .container .projects-container .project-container .text .technologies span img {
+    width: 18px;
+  }
   .projects .container .projects-container .project-container .photo {
-    max-width: 700px;
     aspect-ratio: 3/2;
   }
   .projects .container .projects-container .project-container .photo .project-links a.github svg {
@@ -405,15 +413,6 @@ footer {
   }
   .projects .container .projects-container .project-container .photo .project-links a.external-link svg {
     height: 80px;
-  }
-  .projects .container .projects-container .alternate .text {
-    grid-column: 6/11;
-  }
-  .projects .container .projects-container .alternate .text .project-title, .projects .container .projects-container .alternate .text .technologies {
-    padding-left: 20%;
-  }
-  .projects .container .projects-container .alternate .photo {
-    grid-column: 1/7;
   }
   .about p {
     font-size: 1.15rem;
@@ -424,7 +423,7 @@ footer {
 }
 @media (min-width: 2500px) {
   .container {
-    max-width: 2000px;
+    max-width: 1800px;
   }
   .container h2 {
     font-size: 2.3rem;
@@ -451,20 +450,11 @@ footer {
     font-size: 3rem;
   }
   .projects .container {
-    max-width: 2300px;
+    max-width: 1600px;
   }
   .projects .container h2 {
     text-align: center;
     margin-bottom: 3rem;
-  }
-  .projects .container .projects-container {
-    display: flex;
-    gap: 2%;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .projects .container .projects-container .project-container {
-    flex-basis: 49%;
   }
   .projects .container .projects-container .project-container .text .project-title {
     font-size: 2rem;
@@ -474,13 +464,17 @@ footer {
   }
   .projects .container .projects-container .project-container .text .technologies span {
     font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 7px;
+    margin-right: 7px;
   }
   .about .container {
-    max-width: 1400px;
+    max-width: 1600px;
+    margin-bottom: 2rem;
   }
   .about .container h2 {
     text-align: center;
-    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
   .about p {
     font-size: 1.4rem;
