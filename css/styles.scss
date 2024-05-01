@@ -355,7 +355,7 @@ footer{
                         .project-title{
                             margin-top:0; 
                             margin-bottom:1.5rem;
-                            width:70%;
+                            width:80%;
                             text-align:center; 
                             font-size:1.5rem; 
                             
@@ -376,7 +376,7 @@ footer{
                         grid-column:6/11;
                         .project-title{
                             width: 100%;
-                            padding-left:35%;
+                            padding-left:20%;
                         }
                         .technologies{
                             width:100%;
@@ -391,6 +391,11 @@ footer{
             }
         }
     }  
+    .contact{
+        .container{
+            max-width:500px;
+        }
+    }
 }
 
 @media (min-width:1024px){

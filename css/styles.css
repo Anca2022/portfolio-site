@@ -336,7 +336,7 @@ footer {
   .projects .container .projects-container .project-container .text .project-title {
     margin-top: 0;
     margin-bottom: 1.5rem;
-    width: 70%;
+    width: 80%;
     text-align: center;
     font-size: 1.5rem;
   }
@@ -354,7 +354,7 @@ footer {
   }
   .projects .container .projects-container .alternate .text .project-title {
     width: 100%;
-    padding-left: 35%;
+    padding-left: 20%;
   }
   .projects .container .projects-container .alternate .text .technologies {
     width: 100%;
@@ -363,6 +363,9 @@ footer {
   .projects .container .projects-container .alternate .photo {
     grid-column: 1/7;
     margin-left: 0;
+  }
+  .contact .container {
+    max-width: 500px;
   }
 }
 @media (min-width: 1024px) {
