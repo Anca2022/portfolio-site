@@ -350,7 +350,7 @@ footer {
     max-width: unset;
   }
   .projects .container .projects-container .alternate .text {
-    grid-column: 6/11;
+    grid-column: 5/11;
   }
   .projects .container .projects-container .alternate .text .project-title {
     width: 100%;
@@ -361,7 +361,7 @@ footer {
     padding-left: 20%;
   }
   .projects .container .projects-container .alternate .photo {
-    grid-column: 1/7;
+    grid-column: 1/6;
     margin-left: 0;
   }
   .contact .container {
