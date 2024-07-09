@@ -193,6 +193,9 @@ header .container .navbar .display-nav ul li .button:hover {
 }
 .projects .container .projects-container .project-container .photo img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .projects .container .projects-container .project-container .photo .project-links {
   position: absolute;
@@ -347,7 +350,7 @@ footer {
     grid-column: 6/11;
     grid-row: 1/2;
     margin-right: 0;
-    max-width: unset;
+    max-width: 800px;
   }
   .projects .container .projects-container .alternate .text {
     grid-column: 5/11;

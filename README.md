@@ -13,6 +13,6 @@ To get a visual preview of my portfolio website, please visit Portfolio Website 
 ## License
 This project is licensed under the MIT License.
 
-Thank you for visiting my portfolio repository. If you have any questions or would like to connect, feel free to reach out throughmy LinkedIn account - https://www.linkedin.com/in/anca-m-matei/ .
+Thank you for visiting my portfolio repository. If you have any questions or would like to connect, feel free to reach out through my LinkedIn account - https://www.linkedin.com/in/anca-m-matei/ .
 
 Happy coding!

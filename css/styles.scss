@@ -176,7 +176,6 @@ header{
                         flex-wrap:wrap;
                         gap:1%;
                         justify-content:center;
-                        
                         span{
                             background-color:var(--light-bgr);
                             border-radius:5px;
@@ -199,7 +198,9 @@ header{
                     max-width:400px;
                     border-radius: 5px;
                     img{
-                        width:100%;                      
+                        width:100%;  
+                        height:100%;
+                        object-fit:cover;                    
                     }
                     .project-links{
                         position:absolute;
@@ -368,7 +369,7 @@ footer{
                         grid-column:6/11;
                         grid-row:1/2;
                         margin-right:0;
-                        max-width:unset;  
+                        max-width:800px;  
                     }
                 }
                 .alternate{
