@@ -47,7 +47,7 @@ header {
   width: 100%;
   background-color: white;
   z-index: 3;
-  padding: 1rem;
+  padding: 2rem 1.5rem 1rem 1.5rem;
 }
 header .container {
   margin: 0 auto 0 auto;
@@ -113,10 +113,13 @@ header .container .navbar .display-nav ul li .button:hover {
   color: white;
 }
 
+.shadow {
+  box-shadow: 0 0 8px rgb(224, 224, 224);
+}
+
 .intro {
   height: calc(100vh - 5rem);
-  padding-left: 1rem;
-  padding-bottom: 1rem;
+  margin: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,20 +135,19 @@ header .container .navbar .display-nav ul li .button:hover {
 
 .about {
   font-family: "Inter", sans-serif;
-  padding: 5rem 1rem 0 1rem;
+  padding: 6rem 1.5rem 0 1.5rem;
 }
 .about h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .about p {
-  margin-top: 0.4rem;
-  padding: 0.5rem;
+  margin-top: 1rem;
   font-size: 1.1rem;
 }
 
 .projects {
   font-family: "Lato", sans-serif;
-  padding: 5rem 1rem 2rem 1rem;
+  padding: 6rem 1.5rem;
 }
 .projects .container h2 {
   margin-bottom: 2rem;
@@ -181,6 +183,7 @@ header .container .navbar .display-nav ul li .button:hover {
 }
 .projects .container .projects-container .project-container .text .technologies span img {
   width: 15px;
+  height: 15px;
   padding-right: 2px;
 }
 .projects .container .projects-container .project-container .photo {
@@ -190,6 +193,8 @@ header .container .navbar .display-nav ul li .button:hover {
   overflow: hidden;
   max-width: 400px;
   border-radius: 5px;
+  box-shadow: 4px 4px 15px rgba(29, 53, 62, 0.2);
+  transition: 0.5s ease-out;
 }
 .projects .container .projects-container .project-container .photo img {
   width: 100%;
@@ -202,7 +207,7 @@ header .container .navbar .display-nav ul li .button:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,6 +230,10 @@ header .container .navbar .display-nav ul li .button:hover {
 .projects .container .projects-container .project-container .photo .project-links a:hover svg {
   color: var(--hover);
 }
+.projects .container .projects-container .project-container .photo:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 5px 15px rgba(29, 53, 62, 0.3);
+}
 .projects .container .projects-container .project-container .photo:hover .project-links {
   -webkit-clip-path: circle(100%);
           clip-path: circle(100%);
@@ -234,7 +243,7 @@ header .container .navbar .display-nav ul li .button:hover {
   background-color: var(--light-bgr);
   text-align: center;
   font-family: "Inter", sans-serif;
-  padding: 4rem 1rem 3rem 1rem;
+  padding: 4rem 1.5rem 3rem 1.5rem;
 }
 .contact .container {
   max-width: 360px;
@@ -266,13 +275,12 @@ footer {
   background-color: var(--light-bgr);
   text-align: center;
   padding-bottom: 1rem;
-  font-family: "montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (min-width: 760px) {
   .container {
-    max-width: unset;
-    width: 100%;
+    max-width: 800px;
   }
   header .container .navbar {
     width: 50%;
@@ -317,14 +325,12 @@ footer {
     background-color: var(--hover);
     border-radius: 8px;
   }
-  .intro {
+  .intro .container {
+    width: 100%;
     padding-left: 15%;
   }
-  .projects {
-    padding-bottom: 3rem;
-  }
   .projects .container .projects-container .project-container {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
   }
@@ -373,13 +379,14 @@ footer {
 }
 @media (min-width: 1024px) {
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
   }
   h2 {
     font-size: 1.8rem;
   }
   header {
-    font-size: 1.3rem;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
   }
   header .logo a {
     font-size: 2rem;
@@ -387,14 +394,14 @@ footer {
   header .container .navbar nav ul li .button {
     font-size: 1.35rem;
   }
-  .intro {
-    padding-left: 20%;
-  }
   .intro h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .intro h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .projects {
+    padding: 6rem 3rem;
   }
   .projects .container .projects-container .project-container .text .project-title {
     font-size: 1.7rem;
@@ -410,15 +417,21 @@ footer {
   }
   .projects .container .projects-container .project-container .text .technologies span img {
     width: 18px;
+    height: 18px;
   }
   .projects .container .projects-container .project-container .photo {
     aspect-ratio: 3/2;
   }
   .projects .container .projects-container .project-container .photo .project-links a.github svg {
     width: 40px;
+    height: 40px;
   }
   .projects .container .projects-container .project-container .photo .project-links a.external-link svg {
-    height: 80px;
+    width: 30px;
+    height: 40px;
+  }
+  .about {
+    padding: 6rem 3rem 2rem 3rem;
   }
   .about p {
     font-size: 1.15rem;
@@ -429,7 +442,7 @@ footer {
 }
 @media (min-width: 2500px) {
   .container {
-    max-width: 1800px;
+    max-width: 1600px;
   }
   .container h2 {
     font-size: 2.3rem;
@@ -446,17 +459,11 @@ footer {
   header .container .navbar nav ul li .button {
     font-size: 1.5rem;
   }
-  .intro {
-    padding-left: 25%;
-  }
   .intro h1 {
     font-size: 5rem;
   }
   .intro h2 {
     font-size: 3rem;
-  }
-  .projects .container {
-    max-width: 1600px;
   }
   .projects .container h2 {
     text-align: center;

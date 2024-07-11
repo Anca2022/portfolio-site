@@ -1,6 +1,17 @@
 let openMenuBtn = document.getElementById('open-menu');
 let closeMenuBtn = document.getElementById('close-menu');
 let nav = document.getElementById('nav');
+let header = document.getElementsByTagName('header')[0]; 
+
+window.addEventListener('scroll', ()=> {
+    if(window.scrollY < 100) { 
+        if(header.classList.contains('shadow')) {
+            header.classList.remove('shadow');
+        };
+    } 
+    else { 
+        header.classList.add('shadow'); };
+})
 
 openMenuBtn.addEventListener('click', openMenu);
 closeMenuBtn.addEventListener('click', closeMenu); 
