@@ -328,12 +328,31 @@ footer {
     justify-content: end;
     align-items: center;
   }
-  header .container .navbar nav ul li a {
-    padding: 0.4rem 1rem;
+  header .container .navbar nav ul li {
+    padding: 0.5rem 1rem;
   }
-  header .container .navbar nav ul li a:hover {
-    background-color: var(--light-bgr);
-    border-radius: 5px;
+  header .container .navbar nav ul li a {
+    position: relative;
+  }
+  header .container .navbar nav ul li a.link::before, header .container .navbar nav ul li a.link::after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: var(--hover);
+    position: absolute;
+    transition: 0.5s;
+  }
+  header .container .navbar nav ul li a.link::before {
+    top: -4px;
+    right: -5%;
+  }
+  header .container .navbar nav ul li a.link::after {
+    top: 27px;
+    left: -5%;
+  }
+  header .container .navbar nav ul li a.link:hover::before, header .container .navbar nav ul li a.link:hover::after {
+    width: 110%;
+    transition: 0.5s;
   }
   header .container .navbar nav ul li:last-child {
     width: 130px;
@@ -488,6 +507,14 @@ footer {
   }
   header .container .navbar nav ul li {
     margin-right: 10px;
+  }
+  header .container .navbar nav ul li a.link::before {
+    height: 3px;
+    top: -5px;
+  }
+  header .container .navbar nav ul li a.link::after {
+    height: 3px;
+    top: 39px;
   }
   header .container .navbar nav ul li .button {
     font-size: 1.5rem;

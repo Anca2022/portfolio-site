@@ -1,5 +1,4 @@
 //download fonts? 
-// hover effect navbar 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -285,7 +284,6 @@ header{
             flex-direction:row;
             justify-content: space-evenly;
             li{
-                
                 a:hover{
                     color:var(--hover);
                 }
@@ -328,13 +326,33 @@ footer{
                         justify-content:end;
                         align-items: center;
                         li{
+                            padding:0.5rem 1rem;
                             a{
-                                padding:0.4rem 1rem;
-                                
+                                position: relative;
                             }
-                            a:hover{
-                                background-color:var(--light-bgr);
-                                border-radius:5px;
+                            a.link{
+                                &::before, &::after{
+                                    content: ''; 
+                                    height: 2px;
+                                    width: 0%; 
+                                    background-color: var(--hover);
+                                    position: absolute; 
+                                    transition:0.5s;
+                                }
+                                &::before{
+                                    top: -4px; 
+                                    right: -5%;
+                                }
+                                &::after{ 
+                                    top: 27px; 
+                                    left: -5%;
+                                }
+                            }
+                            a.link:hover{
+                                &::before, &::after{
+                                    width: 110%;
+                                    transition: 0.5s;
+                                }
                             }
                             &:last-child{
                                 width:130px;
@@ -525,6 +543,16 @@ footer{
         }
         .container .navbar nav ul li{
             margin-right: 10px;
+            a.link{
+                &::before{
+                    height:3px;
+                    top: -5px;
+                }
+                &::after{ 
+                    height: 3px;
+                    top: 39px; 
+                }
+            }
             .button{
                 font-size:1.5rem;
             }
