@@ -146,11 +146,25 @@ header .container .navbar .display-nav ul li .button:hover {
 }
 
 .projects {
+  scroll-snap-align: start;
+  height: 100%;
   font-family: "Lato", sans-serif;
   padding: 6rem 1.5rem;
 }
 .projects .container h2 {
   margin-bottom: 2rem;
+}
+.projects .container .projects-container {
+  height: 80vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.projects .container .projects-container .project-container {
+  margin: 0 10px;
+  scroll-snap-align: start;
+}
+.projects .container .projects-container .project-container:last-child {
+  padding-bottom: 15px;
 }
 .projects .container .projects-container .project-container .text .project-title {
   margin-top: 3rem;
@@ -237,6 +251,18 @@ header .container .navbar .display-nav ul li .button:hover {
 .projects .container .projects-container .project-container .photo:hover .project-links {
   -webkit-clip-path: circle(100%);
           clip-path: circle(100%);
+}
+.projects .container .projects-container::-webkit-scrollbar {
+  background-color: var(--light-bgr);
+  border-radius: 7px;
+  width: 7px;
+}
+.projects .container .projects-container::-webkit-scrollbar-thumb {
+  background-color: var(--dark-bgr);
+  border-radius: 7px;
+}
+.projects .container .projects-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--menu-brg);
 }
 
 .contact {
@@ -429,6 +455,13 @@ footer {
   .projects .container .projects-container .project-container .photo .project-links a.external-link svg {
     width: 30px;
     height: 40px;
+  }
+  .projects .container .projects-container::-webkit-scrollbar {
+    border-radius: 12px;
+    width: 12px;
+  }
+  .projects .container .projects-container::-webkit-scrollbar-thumb {
+    border-radius: 12px;
   }
   .about {
     padding: 6rem 3rem 2rem 3rem;
